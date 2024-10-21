@@ -1,0 +1,85 @@
+0000 输入（关键帧/视频+文稿）和输出（带音频的视频）是什么
+
+!!!!1 效果展示 对比优势(EN&CN)(new video)
+1.1（横向展示 1无音频的视频（输入1） 2文本（输入2） 3配好音频的视频）-->0000
+
+1.2 别人配的（真实web找到的）vs我们配的（同视频同文本不同音频）
+普通tts / web视频（配音很平）VS 无声视频&我们的音频
+
+
+
+2 Appendix of Psychological Experiments
+    **2.1 dataset 3videos --some on index,all on other link(all)
+    **2.2 survey interface
+    **2.3 semi-structred & problem-centered(Q)
+    **2.4 Q&A
+
+3 Appendix of V-CASS Method
+    *3.1 Prompt for VLM
+    *3.2 Infused Knowledge for LLM(+CoT)
+
+4 Appendix of User Studies
+    **4.1 videos --2dnlink
+    **4.2 survey interface
+
+5 Appendix of Case Studies on BLVs
+    *interview record 
+
+
+
+
+1.1 pretest video
+
+
+1 preview
+10+videos
+
+2 Method Details
+    2.1 Prompt for VLM
+    2.2 Infused Knowledge for LLM
+    2.3 VoxInstruct advantages
+
+3 Expertise Interview
+    3.1 aim
+    3.2 details
+        3.2.1 Semi-structred & Problem-centered
+        3.2.2 Participants
+        3.2.3 Materials
+    3.3 Results and analysis
+
+4 Psychological Experiments
+    4.1 Overview
+    4.2 Materials and settings
+    4.3 Results and analysis
+
+5 User study Details
+    5.1 User study 01
+        Overview
+        Materials
+        Results and analysis
+    5.2 User study 01
+        Overview
+        Materials
+        Results and analysis
+    5.3 BLV
+        Overview
+        Materials
+        Results and analysis
+
+
+
+
+
+demo
+% \section{Psychological Experiments Details}
+% \subsection{Examples of Experimental Materials}
+% \subsection{Survey}
+% \section{Expert Knowledge Details}
+% \subsection{Interview}
+% \section{Vision-context-based Expressive Speech Synthesis Method Details}
+% \subsection{Prompt for VLM}
+% \subsection{Infused Knowledge for LLM}
+% \section{User Study Details}
+% \subsection{Survey}
+% \subsection{XXX}
+% \subsection{BLVXXXX}
