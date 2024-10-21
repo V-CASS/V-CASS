@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-CASS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- <section class="sec-ctn">
+        <div class="text"> text  </div>
+        <div class="mov-ctn"> VIDEOS</div>
+        <div class="mov">video</div>
+        <div class="link">link</div>
+    </section> -->
+    
+
+
+
+    <section class="sec-ctn" id="us_video">
+        <h2>Appendix of User Study Videos</h2>
+        <div class="us_video">
+            <div id="video-container_us"></div>
+            <script>
+                // 直接在数组中包含完整的相对路径
+                const videoFiles_us = [
+                'assets/USVideo/V02-s-P.mp4',
+                'assets/USVideo/V03-s-N.mp4',
+                'assets/USVideo/V06-s-P.mp4',
+                'assets/USVideo/V07-s-N.mp4',
+                'assets/USVideo/V08-s-P.mp4',
+                'assets/USVideo/V10-s-P.mp4',
+                'assets/USVideo/V15-s-N.mp4',
+                'assets/USVideo/V16-s-P.mp4',
+                'assets/USVideo/V21-s-N.mp4',
+                'assets/USVideo/V22-s-N.mp4'
+                    // 添加更多的视频文件路径
+                ];
+        
+                const videoContainer_us = document.getElementById('video-container_us');
+        
+                videoFiles_us.forEach(file => {
+                    const videoElement_us = document.createElement('video');
+                    videoElement_us.className = 'mov';
+                    videoElement_us.controls = true;
+        
+                    const sourceElement_us = document.createElement('source');
+                    sourceElement_us.src = file;
+                    sourceElement_us.type = 'video/mp4';
+        
+                    videoElement_us.appendChild(sourceElement_us);
+                    videoContainer_us.appendChild(videoElement_us);
+                });
+            </script>
+            
+        </div>
+    </section>
+
+    
+</body>
+</html>
