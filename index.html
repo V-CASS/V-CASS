@@ -394,48 +394,52 @@
     <section class="sec-ctn" id="method">
         <h2>3 Appendix of V-CASS Method</h2>
         <div>
-            <h3>3.1 Prompt for VLM</h4>
-            <div>
+            <!-- <h3>3.1 Prompt for VLM</h4> -->
+            <!-- <div>
                 <p>In order to extract detailed, objective information from each keyframe without introducing any emotional bias, we designed a specialized prompt for the Vision-Language Model (VLM). This prompt is tailored to capture the visual content and style of the image in a highly neutral and descriptive manner.</p>
                 <p>The VLM is instructed to focus solely on the factual details of the image, ensuring that the description remains purely informational. By avoiding any emotional language or interpretive keywords, the prompt ensures that the output provides an accurate visual summary that can later be processed for emotional inference in subsequent stages.</p>
                 <p>The key elements of the prompt are:</p>
                 <p><strong>Comprehensive Detail: </strong>The VLM is asked to describe the keyframe in as much detail as possible, focusing on both content (objects, people, background elements) and stylistic attributes (colors, lighting, shapes).</p>
                 <p><strong>Objectivity: </strong>The prompt explicitly avoids any emotional or subjective language, ensuring that the output remains neutral and strictly descriptive.</p>
                 <p><strong>Neutral Style: </strong>The VLM's output must avoid keywords or phrases that could imply an emotional interpretation, such as "calm" or "tense." This allows for an unbiased description of the visual content, which can then be further analyzed for emotional alignment in the speech synthesis stage.</p>
-            </div>
+            </div> -->
+            <pre>
+                <p class="preTitle">3.1 Prompt for VLM</p>
+                <p>In order to extract detailed, objective information from each keyframe without introducing any emotional bias, we designed a specialized prompt for the Vision-Language Model (VLM). This prompt is tailored to capture the visual content and style of the image in a highly neutral and descriptive manner.</p>
+                <p>The VLM is instructed to focus solely on the factual details of the image, ensuring that the description remains purely informational. By avoiding any emotional language or interpretive keywords, the prompt ensures that the output provides an accurate visual summary that can later be processed for emotional inference in subsequent stages.</p>
+                <p>The key elements of the prompt are:</p>
+                <p><strong>Comprehensive Detail: </strong>The VLM is asked to describe the keyframe in as much detail as possible, focusing on both content (objects, people, background elements) and stylistic attributes (colors, lighting, shapes).</p>
+                <p><strong>Objectivity: </strong>The prompt explicitly avoids any emotional or subjective language, ensuring that the output remains neutral and strictly descriptive.</p>
+                <p><strong>Neutral Style: </strong>The VLM's output must avoid keywords or phrases that could imply an emotional interpretation, such as "calm" or "tense." This allows for an unbiased description of the visual content, which can then be further analyzed for emotional alignment in the speech synthesis stage.</p>
+            </pre> 
         </div>
 
         <div>
-            <h3>3.2 Infused Knowledge for LLM through CoT Strategy</h4>
+            <!-- <h3>3.2 Infused Knowledge for LLM through CoT Strategy</h4> -->
             <!-- <div>We infuse the expert knowledge to LLM through CoT strategy...</div> -->
-            <div>
-                <h4>Task Description</h4>
-                <div>
-                    The primary task involves analyzing keyframe visual contexts to extract emotional and content information. This information is then translated into expressive speech synthesis instructions that align semantically and emotionally with the visual content. The goal is to enhance user understanding and engagement through the integration of para-linguistic cues in speech.
-                </div>
+            <pre>
+                <p class="preTitle">3.2 Infused Knowledge for LLM through CoT Strategy</p>
+                <p><strong>Task Description</strong></p>
+                <p>The primary task involves analyzing keyframe visual contexts to extract emotional and content information. This information is then translated into expressive speech synthesis instructions that align semantically and emotionally with the visual content. The goal is to enhance user understanding and engagement through the integration of para-linguistic cues in speech.</p>
                 
-                <h4>Expert Knowledge Utilization</h4>
+                <p><strong>Expert Knowledge Utilization</strong></p>
+                <p>Expert knowledge in visual analysis is applied to guide emotional inference. This includes the analysis of lines, shapes, light and shadow, color psychology, and object symbolism. For instance, soft curves and warm lighting might evoke calm, while sharp lines and dark shadows can suggest tension or unease. This expert-driven process is vital for accurately interpreting the visual content's emotional tone.</p>
+    
+                <p><strong>Workflow Explanation</strong></p>
                 <div>
-                    Expert knowledge in visual analysis is applied to guide emotional inference. This includes the analysis of lines, shapes, light and shadow, color psychology, and object symbolism. For instance, soft curves and warm lighting might evoke calm, while sharp lines and dark shadows can suggest tension or unease. This expert-driven process is vital for accurately interpreting the visual content's emotional tone.
-                </div>
-
-                <h4>Workflow Explanation</h4>
-                <div>
-                    <p><strong> 1: Visual Content Analysis: </strong>Analyze visual elements, such as shapes, colors, and lines, using a Vision-Language Model (VLM) to extract relevant features that inform the emotional and contextual interpretation.</p>
-                    <p><strong> 2: Emotional Inference: </strong>Using the expert knowledge and the extracted visual cues, infer the emotional content of the video. This step includes mapping specific visual cues (e.g., lighting, composition) to likely emotional responses.</p>
+                    <p><strong>1: Visual Content Analysis: </strong>Analyze visual elements, such as shapes, colors, and lines, using a Vision-Language Model (VLM) to extract relevant features that inform the emotional and contextual interpretation.</p>
+                    <p><strong>2: Emotional Inference: </strong>Using the expert knowledge and the extracted visual cues, infer the emotional content of the video. This step includes mapping specific visual cues (e.g., lighting, composition) to likely emotional responses.</p>
                     <p><strong>3: Instruction Generation: </strong> Translate the emotional and content information into specific speech synthesis instructions, including tone, mood, volume, and speech rate. These instructions guide the synthesis of context-aware expressive speech.</p>
                 </div>
                 
-                <h4>Workflow Examples</h4>
+                <p><strong>Workflow Examples</strong></p>
                 <div>
                     <p>Example 1: A video with soft curves and warm colors might generate a calm, warm-toned female voice to describe a serene landscape scene.</p>
                     <p>Example 2: Sharp lines and high-contrast colors might result in a tense, assertive male voice, aligned with the visual content's emotional intensity.</p>
                 </div>
-                
+                </pre>            
 
-            </div>
         </div>
-
     
     </section>
 
