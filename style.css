@@ -20,6 +20,7 @@ p{
     margin-bottom: 10px;
 }
 
+
 h2{
     margin-top: 0;
     color: var(--Color-title);
@@ -44,9 +45,9 @@ img{
 }
 
 .mov{
-    width: 360px;
-    height: 240px;
-    margin: 10px;
+    width: 240px;
+    height: 160px;
+    margin: 0;
     padding: 0;
 }
 
@@ -67,6 +68,9 @@ thead{
 tbody{
     text-align: left;
 }
+tbody.dataset{
+    text-align: center;
+}
 table, th, td {
     border: 1px solid #e3e3e3; /* 为表格、表头和单元格添加边框 */
 }
@@ -85,6 +89,7 @@ table.survey, .survey th, .survey td {
 table.survey td {
     vertical-align: top; /* 设置单元格内容顶对齐 */
 }
+
 .imgtd{
     width: 60%;
 }
@@ -147,6 +152,19 @@ table.survey td {
     color: #983e64;
 }
 
+.videoList{
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.video-container{
+    font-size: 15px;
+    color: #8f8f8f;
+    width: 240px;
+    text-align: center;
+    margin:0 auto;
+}
 
 
 

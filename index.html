@@ -25,15 +25,15 @@
 
         <div class="content">
             <div style="margin-bottom: 50px;">
-                <h1>V-CASS: Vision-context-aware Expressive Speech Synthesis for
+                <h1 style="font-size: 45px;">V-CASS: Vision-context-aware Expressive Speech Synthesis for
                     Enhancing User Understanding of Videos</h1>
         
             </div>
 
-            <h2 style="margin-bottom: 0;">Contents in this page</h2>
+            <h2 style="margin-bottom: 0;">Contents</h2>
             <nav>
                 <ul style="margin: 0;">
-                    <li><a href="#comparsion">1 Comparsion</a></li>
+                    <li><a href="#comparsion">1 Vision-context-aware Expressive Synthesized Speech Demo</a></li>
                     <li><a href="#PE">2 Appendix of Psychological Experiments</a></li>
                     <li><a href="#method">3 Appendix of V-CASS Method</a></li>
                     <li><a href="#US">4 Appendix of User Studies</a></li>
@@ -55,9 +55,12 @@
         <table>
             <thead>
                 <tr>
-                    <td colspan="2"><h3>Given Video and Transcript</h4></td>
+                    <td><h3>Given Video and Transcript</h4></td>
                     <td><h3>Vision-context-aware Expressive Synthesized Speech</h4></td>
-                    <!-- <td colspan="2"><h4>Given Video and Transcript</h4></td>
+                    <td><h3>Given Video and Transcript</h4></td>
+                    <td><h3>Vision-context-aware Expressive Synthesized Speech</h4></td>
+        
+                        <!-- <td colspan="2"><h4>Given Video and Transcript</h4></td>
                     <td rowspan="2"><h4>Video with Expressive Speech</h4></td> -->
                 </tr>
                 <!-- <tr>
@@ -65,51 +68,78 @@
                     <td><h4>Speech Transcript</h4></td>
                 </tr> -->
             </thead>
-            <tbody>
+            <tbody class="dataset">
                 <tr>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/demo01/N01.mp4" type="video/mp4">
+                            <source src="assets/demo01/N01.mp4" type="video/mp4">
                         </video>
-                    </td>
-                    <td>
-                        <div>她站在船尾，凝望着面前长长的浪花轨迹，天空阴沉灰暗，没有一丝生气。</div>
+                        <div>她站在船尾，凝望着面前长长的浪花轨迹，天空阴沉灰暗，没有一丝生气。(She stood at the stern, staring at the waves in front of her. The boat left a long trail of waves on the water, and the sky was gloomy and lifeless)</div>
                     </td>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/demo01/N01-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/N01-s.mp4" type="video/mp4">
                         </video>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="./assets/demo01/P02.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                    <td>
-                        <div>一丛美丽的金黄色花朵在微风中欢快地摇曳，在远处蓝天的映衬下，显得格外耀眼。</div>
                     </td>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/demo01/P02-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/N02.mp4" type="video/mp4">
                         </video>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="./assets/demo01/N02.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                    <td>
                         <div>In the dimly lit room, a person quietly opened a book, swiped his fingers back and forth, and flipped through the pages.</div>
                     </td>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/demo01/N02-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/P02.mp4" type="video/mp4">
+                        </video>
+                        <div>一丛美丽的金黄色花朵在微风中欢快地摇曳，在远处蓝天的映衬下，显得格外耀眼。(A beautiful cluster of golden flowers swayed happily in the breeze, appearing particularly dazzling against the backdrop of the distant blue sky)</div>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/P02-s.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/P01.mp4" type="video/mp4">
+                        </video>
+                        <div>In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+
+                <!-- <tr>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/N02.mp4" type="video/mp4">
+                        </video>
+                        <div>In the dimly lit room, a person quietly opened a book, swiped his fingers back and forth, and flipped through the pages.</div>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/N02.mp4" type="video/mp4">
+                        </video>
+                        <div>In the dimly lit room, a person quietly opened a book, swiped his fingers back and forth, and flipped through the pages.</div>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
                         </video>
                     </td>
                 </tr>
@@ -118,18 +148,29 @@
                 <tr>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/demo01/P01.mp4" type="video/mp4">
+                            <source src="assets/demo01/P01.mp4" type="video/mp4">
                         </video>
-                    </td>
-                    <td>
                         <div>In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
                     </td>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/demo01/P01-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
                         </video>
                     </td>
-                </tr>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/P01.mp4" type="video/mp4">
+                        </video>
+                        <div>In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr> -->
+
+                
             </tbody>
         </table>
 
@@ -144,25 +185,12 @@
                 <tr>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/USVideo/V02-s-P.mp4" type="video/mp4">
+                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
                         </video>
                     </td>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="./assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="./assets/USVideo/V02-s-P.mp4" type="video/mp4">
+                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
                         </video>
                     </td>
                 </tr>
@@ -170,12 +198,25 @@
                 <tr>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/USVideo/V02-s-P.mp4" type="video/mp4">
+                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
                         </video>
                     </td>
                     <td>
                         <video class="mov" controls>
-                            <source src="./assets/USVideo/V02-s-P.mp4" type="video/mp4">
+                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
                         </video>
                     </td>
                 </tr>
@@ -195,8 +236,41 @@
         <div class="dataset">
             <h3>2.1 Survey Dataset</h3>
             <p>Here shows videos used in the psychological expriments.</p>
-            <div id="video-container_pre"></div>
-            <script>
+            <div class="videoList">
+                <div class="video-container">
+                    <video class="mov" controls>
+                        <source src="assets/pretestVideo/Consistent_negative_video/V13-C-N.mp4" type="video/mp4">
+                    </video>
+                    <p style="width: 250px;">Negative video with negative speech</p>
+                </div>
+                <div class="video-container">
+                    <video class="mov" controls>
+                        <source src="assets/pretestVideo/Consistent_positive_video/V11-C-P.mp4" type="video/mp4">
+                    </video>
+                    <p>Positive video with positive speech</p>
+                </div>
+                <div class="video-container">
+                    <video class="mov" controls>
+                        <source src="assets/pretestVideo/Inconsistent_negative_video/V9-IC-N.mp4" type="video/mp4">
+                    </video>
+                    <p>Positive video with negative speech</p>
+                </div>
+                <div class="video-container">
+                    <video class="mov" controls>
+                        <source src="assets/pretestVideo/Inconsistent_positive_video/V24-IC-P.mp4" type="video/mp4">
+                    </video>
+                    <p>Negative video with positive speech</p>
+                </div>
+                <div class="video-container">
+                    <video class="mov" controls>
+                        <source src="assets/pretestVideo/Neutral_video/V25-0.mp4" type="video/mp4">
+                    </video>
+                    <p>Video with neutral speech</p>
+                </div>
+            </div>
+            
+
+            <!-- <script>
                 // 直接在数组中包含完整的相对路径
                 const videoFiles_pre = [
                 'assets/pretestVideo/Consistent_negative_video/V13-C-N.mp4',
@@ -207,7 +281,7 @@
                     // 添加更多的视频文件路径
                 ];
         
-                const videoContainer_pre = document.getElementById('video-container_pre');
+                const videoContainer_pre = document.getElementById('video-container');
         
                 videoFiles_pre.forEach(file => {
                     const videoElement_pre = document.createElement('video');
@@ -221,7 +295,7 @@
                     videoElement_pre.appendChild(sourceElement_pre);
                     videoContainer_pre.appendChild(videoElement_pre);
                 });
-            </script>
+            </script> -->
             <div>For more videos, click <a href="dataset.html">here</a></div>
         </div>
 
@@ -241,7 +315,7 @@
                             </ul>            
                         </td>
                         <td class="imgtd">
-                            <img src="./assets/img/psychological_expriment_survey.png" alt="">
+                            <img src="assets/img/psychological_expriment_survey.png" alt="">
                         </td>
                     </th>
                 </table>
@@ -376,8 +450,49 @@
         <div class="usVideo">
             <h3>4.1 User Studies Videos</h3>
             <p>Here shows videos used in the user studies.</p>
-            <div id="video-container"></div>
-            <script>
+            <div id="video-container">
+                <div class="videoList">
+                    <div class="video-container">
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
+                        </video>
+                        <p>Video with expressive speech</p>
+                    </div>
+                    <div class="video-container">
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/V03-s-N.mp4" type="video/mp4">
+                        </video>
+                        <p>Video with expressive speech</p>
+                    </div>
+                    <div class="video-container">
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/V06-s-P.mp4" type="video/mp4">
+                        </video>
+                        <p>Video with expressive speech</p>
+                    </div>    
+                </div>
+                <div class="videoList">
+                    <div class="video-container">
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/00/V02-00.mp4" type="video/mp4">
+                        </video>
+                        <p>Video with neutral speech</p>
+                    </div>
+                    <div class="video-container">
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/00/V03-00.mp4" type="video/mp4">
+                        </video>
+                        <p>Video with neutral speech</p>
+                    </div>
+                    <div class="video-container">
+                        <video class="mov" controls>
+                            <source src="assets/USVideo/00/V06-00.mp4" type="video/mp4">
+                        </video>
+                        <p>Video with neutral speech</p>
+                    </div>    
+                </div>
+            </div>
+            <!-- <script>
                 // 直接在数组中包含完整的相对路径
                 const videoFiles = [
                     'assets/USVideo/V02-s-P.mp4',
@@ -400,7 +515,7 @@
                     videoElement.appendChild(sourceElement);
                     videoContainer.appendChild(videoElement);
                 });
-            </script>
+            </script> -->
             
             <div>For more videos, click <a href="usvideo.html">here</a></div>
         </div>
@@ -418,7 +533,7 @@
                         <p>Participants are required to watch the video and summarize the emotional information of the video based on the visual elements of the picture to complete a fill-in-the-blank question.</p>
                     </td>
                     <td class="imgtd">
-                        <img src="./assets/img/user_study01_survey.png" alt="">
+                        <img src="assets/img/user_study01_survey.png" alt="">
                     </td>
                 </th>
             </table>
@@ -433,7 +548,7 @@
                         <p>Participants are required to watch the video, and complete the multiple-choice questions.</p>
                     </td>
                     <td class="imgtd">
-                        <img src="./assets/img/user_study02_survey.png" alt="">
+                        <img src="assets/img/user_study02_survey.png" alt="">
                     </td>
                 </th>
             </table>

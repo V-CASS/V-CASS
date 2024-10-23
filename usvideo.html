@@ -21,7 +21,9 @@
     <section class="sec-ctn" id="us_video">
         <h2>Appendix of User Study Videos</h2>
         <div class="us_video">
-            <div id="video-container_us"></div>
+            <div id="video-container_us">
+                <h4>Videos with Expressive Speeches</h4>
+            </div>
             <script>
                 // 直接在数组中包含完整的相对路径
                 const videoFiles_us = [
@@ -51,6 +53,41 @@
         
                     videoElement_us.appendChild(sourceElement_us);
                     videoContainer_us.appendChild(videoElement_us);
+                });
+            </script>
+
+            <div id="video-container_us00">
+                <h4>Videos with neutral Speeches</h4>
+            </div>
+            <script>
+                // 直接在数组中包含完整的相对路径
+                const videoFiles_us00 = [
+                'assets/USVideo/00/V02-00.mp4',
+                'assets/USVideo/00/V03-00.mp4',
+                'assets/USVideo/00/V06-00.mp4',
+                'assets/USVideo/00/V07-00.mp4',
+                'assets/USVideo/00/V08-00.mp4',
+                'assets/USVideo/00/V10-00.mp4',
+                'assets/USVideo/00/V15-00.mp4',
+                'assets/USVideo/00/V16-00.mp4',
+                'assets/USVideo/00/V21-00.mp4',
+                'assets/USVideo/00/V22-00.mp4'
+                    // 添加更多的视频文件路径
+                ];
+
+                const videoContainer_us00 = document.getElementById('video-container_us00');
+
+                videoFiles_us00.forEach(file => {
+                    const videoElement_us00 = document.createElement('video');
+                    videoElement_us00.className = 'mov';
+                    videoElement_us00.controls = true;
+
+                    const sourceElement_us00 = document.createElement('source');
+                    sourceElement_us00.src = file;
+                    sourceElement_us00.type = 'video/mp4';
+
+                    videoElement_us00.appendChild(sourceElement_us00);
+                    videoContainer_us00.appendChild(videoElement_us00);
                 });
             </script>
             
