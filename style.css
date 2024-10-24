@@ -77,9 +77,10 @@ tbody.dataset{
 td.given{
     background-color: #f8f8ff;
     width: 30%;
+    
 }
 td.output{
-    background-color: #ededf7;
+    background-color: #f7eded;
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
 }
@@ -119,7 +120,7 @@ table.survey td {
 }
 
 #header{
-    width: 100%;
+    /* width: 100%; */
     padding: 10px 0;
     margin: 0 auto;
     background-image: linear-gradient(to right, rgb(66, 83, 127), rgb(136, 92, 102));
