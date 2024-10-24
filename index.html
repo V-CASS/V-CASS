@@ -25,40 +25,44 @@
 
         <div class="content">
             <div style="margin-bottom: 50px;">
-                <h1 style="font-size: 45px;">V-CASS: Vision-context-aware Expressive Speech Synthesis for
+                <h1 style="font-size: 40px;">V-CASS: Vision-context-aware Expressive Speech Synthesis for
                     Enhancing User Understanding of Videos</h1>
         
             </div>
 
-            <h2 style="margin-bottom: 0;">Contents</h2>
+            <h3 style="margin-bottom: 0; color: white;">Contents</h3>
             <nav>
                 <ul style="margin: 0;">
-                    <li><a href="#comparsion">1 Vision-context-aware Expressive Synthesized Speech Demo</a></li>
-                    <li><a href="#PE">2 Appendix of Psychological Experiments</a></li>
-                    <li><a href="#method">3 Appendix of V-CASS Method</a></li>
-                    <li><a href="#US">4 Appendix of User Studies</a></li>
-                    <li><a href="#BLV">5 Appendix of Case Studies on BLVs</a></li>
+                    <li><a href="#comparsion">1. Vision-context-aware Expressive Synthesized Speech Demo</a></li>
+                    <li><a href="#PE">2. Appendix of Psychological Experiments</a></li>
+                    <li><a href="#method">3. Appendix of V-CASS Method</a></li>
+                    <li><a href="#US">4. Appendix of User Studies</a></li>
+                    <li><a href="#BLV">5. Appendix of Case Studies on BLVs</a></li>
                 </ul>
             </nav>
         </div>
+        <p style="color: white;">Please open the demo webpage in Chrome for an enhanced experience. </p>
+
     </section>
 
 
 
 
 
-
     <section class="sec-ctn" id="comparsion">
-        <h2>1 Vision-context-aware Expressive Synthesized Speech Demo</h2>
+        <h4>1. Vision-context-aware Expressive Synthesized Speech Demo</h4>
         <!-- <div>Here compares the videos...</div> -->
 
         <table>
             <thead>
                 <tr>
-                    <td><h3>Given Video and Transcript</h4></td>
-                    <td><h3>Vision-context-aware Expressive Synthesized Speech</h4></td>
-                    <td><h3>Given Video and Transcript</h4></td>
-                    <td><h3>Vision-context-aware Expressive Synthesized Speech</h4></td>
+                    <td class="given"><h4>Given Video</h4></td>
+                    <td> </td>
+                    <td class="given"><h4>Given Transcript</h4></td>
+                    <td> </td>
+                    <td class="output"><h4>Video with Vision-context-aware Expressive Synthesized Speech</h4></td>
+                    <!-- <td><h4>Given Video and Transcript</h4></td>
+                    <td><h4>Vision-context-aware Expressive Synthesized Speech</h4></td> -->
         
                         <!-- <td colspan="2"><h4>Given Video and Transcript</h4></td>
                     <td rowspan="2"><h4>Video with Expressive Speech</h4></td> -->
@@ -70,158 +74,93 @@
             </thead>
             <tbody class="dataset">
                 <tr>
-                    <td>
+                    <td class="given">
                         <video class="mov" controls>
                             <source src="assets/demo01/N01.mp4" type="video/mp4">
                         </video>
-                        <div>她站在船尾，凝望着面前长长的浪花轨迹，天空阴沉灰暗，没有一丝生气。(She stood at the stern, staring at the waves in front of her. The boat left a long trail of waves on the water, and the sky was gloomy and lifeless)</div>
+                        <p class="video-note">W1V01A</p>
                     </td>
-                    <td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div  class="tdTranscript">
+                            <span>她站在船尾，凝望着面前长长的浪花轨迹，天空阴沉灰暗，没有一丝生气。</span><span class="translation">(trans: She stood at the stern, staring at the waves in front of her. The boat left a long trail of waves on the water, and the sky was gloomy and lifeless)</span></div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
                         <video class="mov" controls>
                             <source src="assets/demo01/N01-s.mp4" type="video/mp4">
                         </video>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/N02.mp4" type="video/mp4">
-                        </video>
-                        <div>In the dimly lit room, a person quietly opened a book, swiped his fingers back and forth, and flipped through the pages.</div>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
-                        </video>
+                        <p class="video-note">W1V01B</p>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>
+                    <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo01/P02.mp4" type="video/mp4">
+                            <source src="assets/demo01/N02.mp4" type="video/mp4">
                         </video>
-                        <div>一丛美丽的金黄色花朵在微风中欢快地摇曳，在远处蓝天的映衬下，显得格外耀眼。(A beautiful cluster of golden flowers swayed happily in the breeze, appearing particularly dazzling against the backdrop of the distant blue sky)</div>
+                        <p class="video-note">W1V02A</p>
                     </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/P02-s.mp4" type="video/mp4">
-                        </video>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript">In the dimly lit room, a person quietly opened a book, swiped his fingers back and forth, and flipped through the pages.</div>
                     </td>
-                    <td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
                         <video class="mov" controls>
-                            <source src="assets/demo01/P01.mp4" type="video/mp4">
+                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
                         </video>
-                        <div>In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
-                        </video>
+                        <p class="video-note">W1V02B</p>
                     </td>
                 </tr>
 
-                <!-- <tr>
-                    <td>
+                <tr>
+                    <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo01/N02.mp4" type="video/mp4">
+                            <source src="assets/demo01/P02.mp4" type="video/mp4">
                         </video>
-                        <div>In the dimly lit room, a person quietly opened a book, swiped his fingers back and forth, and flipped through the pages.</div>
+                        <p class="video-note">W1V03A</p>
                     </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
-                        </video>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript"><span>一丛美丽的金黄色花朵在微风中欢快地摇曳，在远处蓝天的映衬下，显得格外耀眼。</span><span class="translation">(trans: A beautiful cluster of golden flowers swayed happily in the breeze, appearing particularly dazzling against the backdrop of the distant blue sky)</span></div>
                     </td>
-                    <td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
                         <video class="mov" controls>
-                            <source src="assets/demo01/N02.mp4" type="video/mp4">
+                            <source src="assets/demo01/P02-s.mp4" type="video/mp4">
                         </video>
-                        <div>In the dimly lit room, a person quietly opened a book, swiped his fingers back and forth, and flipped through the pages.</div>
+                        <p class="video-note">W1V03B</p>
                     </td>
-                    <td>
+                </tr>
+
+                <tr>
+                    <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/P01.mp4" type="video/mp4">
                         </video>
+                        <p class="video-note">W1V04A</p>
+                    </td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript">In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V04B</p>
                     </td>
                 </tr>
 
                 
-                <tr>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/P01.mp4" type="video/mp4">
-                        </video>
-                        <div>In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/P01.mp4" type="video/mp4">
-                        </video>
-                        <div>In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                </tr> -->
 
                 
             </tbody>
         </table>
 
-        <!-- <table>
-            <thead>
-                <tr>
-                    <td><h4>web video</h4></td>
-                    <td><h4>our video</h4></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                    <td>
-                        <video class="mov" controls>
-                            <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
-                        </video>
-                    </td>
-                </tr>
-            </tbody>
-        </table> -->
+       
     
     </section>
 
@@ -231,41 +170,41 @@
     
 
     <section class="sec-ctn" id="PE">
-        <h2>2 Appendix of Psychological Experiments</h2>
+        <h4>2. Appendix of Psychological Experiments</h4>
         <!-- <div>here shows PE metarials</div> -->
         <div class="dataset">
-            <h3>2.1 Survey Dataset</h3>
+            <h4>2.1 Survey Dataset</h4>
             <p>Here shows videos used in the psychological expriments.</p>
             <div class="videoList">
                 <div class="video-container">
                     <video class="mov" controls>
                         <source src="assets/pretestVideo/Consistent_negative_video/V13-C-N.mp4" type="video/mp4">
                     </video>
-                    <p style="width: 250px;">Negative video with negative speech</p>
+                    <p class="video-note" style="width: 250px;">Negative video with negative speech-W2Vcn13</p>
                 </div>
                 <div class="video-container">
                     <video class="mov" controls>
                         <source src="assets/pretestVideo/Consistent_positive_video/V11-C-P.mp4" type="video/mp4">
                     </video>
-                    <p>Positive video with positive speech</p>
+                    <p class="video-note">Positive video with positive speech-W2Vcp11</p>
                 </div>
                 <div class="video-container">
                     <video class="mov" controls>
                         <source src="assets/pretestVideo/Inconsistent_negative_video/V9-IC-N.mp4" type="video/mp4">
                     </video>
-                    <p>Positive video with negative speech</p>
+                    <p class="video-note">Positive video with negative speech-W2Vicn09</p>
                 </div>
                 <div class="video-container">
                     <video class="mov" controls>
                         <source src="assets/pretestVideo/Inconsistent_positive_video/V24-IC-P.mp4" type="video/mp4">
                     </video>
-                    <p>Negative video with positive speech</p>
+                    <p class="video-note">Negative video with positive speech-W2Vicp24</p>
                 </div>
                 <div class="video-container">
                     <video class="mov" controls>
                         <source src="assets/pretestVideo/Neutral_video/V25-0.mp4" type="video/mp4">
                     </video>
-                    <p>Video with neutral speech</p>
+                    <p class="video-note">Video with neutral speech-W2V0n25</p>
                 </div>
             </div>
             
@@ -300,7 +239,7 @@
         </div>
 
         <div>
-            <h3>2.2 Survey Interface</h3>
+            <h4>2.2 Survey Interface</h4>
             <div>
                 <table class="survey">
                     <th>
@@ -323,7 +262,7 @@
         </div>
 
         <div>
-            <h3>2.3 Expert Interview Methodology</h3>
+            <h4>2.3 Expert Interview Methodology</h4>
             <p>The interviews followed a <strong>semi-structured</strong> format. Core questions addressed the relationship between visual cues and emotional expression, but the format allowed flexibility for deeper exploration. This method helped uncover implicit knowledge regarding how voice actors adapt emotional tones based on visual content.</p>
             <h4>2.3.1 Core Questions</h4>
             <ul>
@@ -392,9 +331,9 @@
 
 
     <section class="sec-ctn" id="method">
-        <h2>3 Appendix of V-CASS Method</h2>
+        <h4>3. Appendix of V-CASS Method</h4>
         <div>
-            <!-- <h3>3.1 Prompt for VLM</h4> -->
+            <h4>3.1 Prompt for VLM</h4>
             <!-- <div>
                 <p>In order to extract detailed, objective information from each keyframe without introducing any emotional bias, we designed a specialized prompt for the Vision-Language Model (VLM). This prompt is tailored to capture the visual content and style of the image in a highly neutral and descriptive manner.</p>
                 <p>The VLM is instructed to focus solely on the factual details of the image, ensuring that the description remains purely informational. By avoiding any emotional language or interpretive keywords, the prompt ensures that the output provides an accurate visual summary that can later be processed for emotional inference in subsequent stages.</p>
@@ -404,7 +343,7 @@
                 <p><strong>Neutral Style: </strong>The VLM's output must avoid keywords or phrases that could imply an emotional interpretation, such as "calm" or "tense." This allows for an unbiased description of the visual content, which can then be further analyzed for emotional alignment in the speech synthesis stage.</p>
             </div> -->
             <pre>
-                <p class="preTitle">3.1 Prompt for VLM</p>
+                <!-- <p class="preTitle">3.1 Prompt for VLM</p> -->
                 <p>In order to extract detailed, objective information from each keyframe without introducing any emotional bias, we designed a specialized prompt for the Vision-Language Model (VLM). This prompt is tailored to capture the visual content and style of the image in a highly neutral and descriptive manner.</p>
                 <p>The VLM is instructed to focus solely on the factual details of the image, ensuring that the description remains purely informational. By avoiding any emotional language or interpretive keywords, the prompt ensures that the output provides an accurate visual summary that can later be processed for emotional inference in subsequent stages.</p>
                 <p>The key elements of the prompt are:</p>
@@ -415,10 +354,10 @@
         </div>
 
         <div>
-            <!-- <h3>3.2 Infused Knowledge for LLM through CoT Strategy</h4> -->
+            <h4>3.2 Infused Knowledge for LLM through CoT Strategy</h4>
             <!-- <div>We infuse the expert knowledge to LLM through CoT strategy...</div> -->
             <pre>
-                <p class="preTitle">3.2 Infused Knowledge for LLM through CoT Strategy</p>
+                <!-- <p class="preTitle">3.2 Infused Knowledge for LLM through CoT Strategy</p> -->
                 <p><strong>Task Description</strong></p>
                 <p>The primary task involves analyzing keyframe visual contexts to extract emotional and content information. This information is then translated into expressive speech synthesis instructions that align semantically and emotionally with the visual content. The goal is to enhance user understanding and engagement through the integration of para-linguistic cues in speech.</p>
                 
@@ -450,83 +389,63 @@
     
 
     <section class="sec-ctn" id="US">
-        <h2>4 Appendix of User Studies</h2>
+        <h4>4. Appendix of User Studies</h4>
         <div class="usVideo">
-            <h3>4.1 User Studies Videos</h3>
+            <h4>4.1 User Studies Videos</h4>
             <p>Here shows videos used in the user studies.</p>
             <div id="video-container">
+                <h4>4.1.1 Video with expressive speech</h4>
                 <div class="videoList">
                     <div class="video-container">
                         <video class="mov" controls>
                             <source src="assets/USVideo/V02-s-P.mp4" type="video/mp4">
                         </video>
-                        <p>Video with expressive speech</p>
+                        <p class="video-note">W4V02B</p>
                     </div>
                     <div class="video-container">
                         <video class="mov" controls>
                             <source src="assets/USVideo/V03-s-N.mp4" type="video/mp4">
                         </video>
-                        <p>Video with expressive speech</p>
+                        <p class="video-note">W4V03B</p>
                     </div>
                     <div class="video-container">
                         <video class="mov" controls>
                             <source src="assets/USVideo/V06-s-P.mp4" type="video/mp4">
                         </video>
-                        <p>Video with expressive speech</p>
+                        <p class="video-note">W4V06B</p>
                     </div>    
                 </div>
+
+                <h4>4.1.2 Video with neutral speech</h4>
                 <div class="videoList">
                     <div class="video-container">
                         <video class="mov" controls>
                             <source src="assets/USVideo/00/V02-00.mp4" type="video/mp4">
                         </video>
-                        <p>Video with neutral speech</p>
+                        <p class="video-note">W4V02A</p>
                     </div>
                     <div class="video-container">
                         <video class="mov" controls>
                             <source src="assets/USVideo/00/V03-00.mp4" type="video/mp4">
                         </video>
-                        <p>Video with neutral speech</p>
+                        <p class="video-note">W4V03A</p>
                     </div>
                     <div class="video-container">
                         <video class="mov" controls>
                             <source src="assets/USVideo/00/V06-00.mp4" type="video/mp4">
                         </video>
-                        <p>Video with neutral speech</p>
+                        <p class="video-note">W4V06A</p>
                     </div>    
                 </div>
             </div>
-            <!-- <script>
-                // 直接在数组中包含完整的相对路径
-                const videoFiles = [
-                    'assets/USVideo/V02-s-P.mp4',
-                    'assets/USVideo/V03-s-N.mp4',
-                    'assets/USVideo/V06-s-P.mp4',
-                    // 添加更多的视频文件路径
-                ];
-        
-                const videoContainer = document.getElementById('video-container');
-        
-                videoFiles.forEach(file => {
-                    const videoElement = document.createElement('video');
-                    videoElement.className = 'mov';
-                    videoElement.controls = true;
-        
-                    const sourceElement = document.createElement('source');
-                    sourceElement.src = file;
-                    sourceElement.type = 'video/mp4';
-        
-                    videoElement.appendChild(sourceElement);
-                    videoContainer.appendChild(videoElement);
-                });
-            </script> -->
+         
             
             <div>For more videos, click <a href="usvideo.html">here</a></div>
         </div>
         
 
         <div>
-            <h3>4.2 User Survey Interface</h3>
+            <h4>4.2 User Survey Interface</h4>
             <h4>4.2.1 User Study 01</h4>
             
             <table class="survey">
@@ -565,18 +484,18 @@
 
 
     <section class="sec-ctn" id="BLV">
-        <h2>5 Case Studies on BLVs</h2>
+        <h4>5. Appendix of Case Studies on BLVs</h4>
         <!-- <div>We built objective survey and interview with BLV participants...</div> -->
 
         <div>
-            <h3>5.1 Observation Purpose</h3>
+            <h4>5.1 Observation Purpose</h4>
             <p>
                 This observation aims to explore how emotion-based speech, driven by visual content, can improve the video-watching experience for BLV (Blind and Visually Impaired) users. While many BLV users have grown accustomed to the neutral tone of AI voices, this study introduces emotional narration to create a more immersive and engaging experience, helping them better perceive emotions and imagine visual scenes.
             </p>
         </div>
 
         <div>
-            <h3>5.2 Observation Process and Methodology</h3>
+            <h4>5.2 Observation Process and Methodology</h4>
             <p>
                 The analysis relies on subjective feedback from BLV users. Through interviews, we collected personal opinions on how different types of narration influenced their emotional engagement and overall experience. Despite being familiar with standard AI narration, participants were surprised by the emotional depth that emotion-driven speech brought to their experience.
             </p>
@@ -589,7 +508,7 @@
         </div>
 
         <div>
-            <h3>5.3 Key Findings</h3>
+            <h4>5.3 Key Findings</h4>
             <p>
                 The interviews revealed some key insights:
             </p>
@@ -602,7 +521,7 @@
 
     
         <div>
-            <h3>5.4 Interview Case Studies</h3>
+            <h4>5.4 Interview Case Studies</h4>
             <p>
                 The following examples illustrate how emotion-based speech influenced user experience, drawn from our interviews with participants:
             </p>

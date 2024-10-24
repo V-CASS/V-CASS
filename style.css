@@ -47,7 +47,7 @@ img{
 .mov{
     width: 240px;
     height: 160px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -71,17 +71,38 @@ tbody{
 tbody.dataset{
     text-align: center;
 }
-table, th, td {
-    border: 1px solid #e3e3e3; /* 为表格、表头和单元格添加边框 */
+.tdTranscript{
+    text-align: left;
 }
+td.given{
+    background-color: #f8f8ff;
+    width: 30%;
+}
+td.output{
+    background-color: #ededf7;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+/* td.icon{
+    background-color: #f8f8ff;
+} */
+table, th, td {
+    border-top: 1px solid #e3e3e3;
+    padding: 0;
+    margin: 0;
+}
+
 
 th, td {
     padding: 8px; /* 添加单元格内边距 */
-    border-bottom: 1px solid #e3e3e3; /* 只添加底部边框 */
+    border-bottom: 1px solid #e3e3e3;
 }
-th:last-child, td:last-child {
-    border-right: none; /* 移除最后一个单元格的右边框 */
-}
+/* th:last-child, td:last-child {
+    border-bottom: none;
+} */
+
+
+
 
 table.survey, .survey th, .survey td {
     border: none; /* 移除class为survey的表格及其单元格的边框 */
@@ -89,6 +110,7 @@ table.survey, .survey th, .survey td {
 table.survey td {
     vertical-align: top; /* 设置单元格内容顶对齐 */
 }
+
 
 
 
@@ -131,6 +153,11 @@ table.survey td {
 
 }
 
+.translation{
+    color: #a2a2a2;
+    font-style: italic;
+}
+
 
 
 #header a{
@@ -166,7 +193,33 @@ table.survey td {
     width: 240px;
     text-align: center;
     margin:0 auto;
+    padding: 0 10px;
 }
+.video-note{
+    font-size: 15px;
+    color: #8f8f8f;
+    text-align: center;
+    /* margin:0 auto; */
+}
+
+.mov-link{
+    width: 240px;
+    height: 160px;
+    margin: 0 10px;
+    padding: 0;
+}
+.video-container-link{
+    font-size: 15px;
+    color: #8f8f8f;
+    width: 240px;
+    text-align: center;
+    margin:0 10px;
+    padding: 0;
+}
+/* #video-container_us{
+    display: flex;
+    width: 100%;
+} */
 
 pre {
     background-color: #f4f4f4;
