@@ -172,11 +172,15 @@ table.survey td {
     display: block;
     padding: var(--Padding_as_Gap-default) 0;
     align-items: center;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     border-bottom:1px solid #e3e3e3;
 }
 
+.abstract{
+    font-size: 15px;
+    color: #999999;
+}
 
 .expert{
     color: #983e64;

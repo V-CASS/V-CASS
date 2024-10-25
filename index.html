@@ -33,6 +33,7 @@
             <h3 style="margin-bottom: 0; color: white;">Contents</h3>
             <nav>
                 <ul style="margin: 0;">
+                    <li><a href="#abstract">0. Abstract</a></li>
                     <li><a href="#comparsion">1. Vision-context-aware Expressive Synthesized Speech Demo</a></li>
                     <li><a href="#PE">2. Appendix of Psychological Experiments</a></li>
                     <li><a href="#method">3. Appendix of V-CASS Method</a></li>
@@ -47,7 +48,12 @@
 
 
 
-
+    <section class="sec-ctn" id="abstract">
+        <div class="abstract">
+            <p><strong>0. Abstract</strong></p>
+            Automatic video commentary systems are widely used on multimedia social media platforms to extract factual information about video content. However, current systems may overlook essential para-linguistic cues, including emotion and attitude, which are critical for fully conveying the meaning of visual content. The absence of these cues can limit user understanding or, in some cases, distort the video’s original intent. Expressive speech effectively conveys these cues and enhances the user’s comprehension of videos. Building on these insights, this paper explores the usage of vision context-aware expressive speech in enhancing users’ understanding of videos in video commentary systems1 . Firstly, our psychological experiments indicate that semantic-only speech can lead to ambiguity, and misaligned emotions between speech and visuals may distort content interpretation. To address this, we propose a method called vision-context-aware speech synthesis (V-CASS). It analyzes para-linguistic cues from visuals using a vision-language model and leverages a knowledge-infused language model to guide the expressive speech model in generating context-aligned speech. User studies show that V-CASS enhances emotional and attitudinal resonance, as well as user audio-visual understanding and engagement, with 74.68% of participants preferring the system. Finally, we explore the potential of our method in helping blind and low vision users navigate web videos, improving universal accessibility without visual input.
+        </div>
+    </section>
 
     <section class="sec-ctn" id="comparsion">
         <h4>1. Vision-context-aware Expressive Synthesized Speech Demo</h4>
@@ -76,7 +82,7 @@
                 <tr>
                     <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo01/N01.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V01A.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V01A</p>
                     </td>
@@ -88,7 +94,7 @@
                     <td class="icon"><h2>→</h2></td>
                     <td class="output">
                         <video class="mov" controls>
-                            <source src="assets/demo01/N01-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V01B.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V01B</p>
                     </td>
@@ -97,7 +103,7 @@
                 <tr>
                     <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo01/N02.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V02A.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V02A</p>
                     </td>
@@ -108,7 +114,7 @@
                     <td class="icon"><h2>→</h2></td>
                     <td class="output">
                         <video class="mov" controls>
-                            <source src="assets/demo01/N02-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V02B.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V02B</p>
                     </td>
@@ -117,7 +123,7 @@
                 <tr>
                     <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo01/P02.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V03A.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V03A</p>
                     </td>
@@ -128,7 +134,7 @@
                     <td class="icon"><h2>→</h2></td>
                     <td class="output">
                         <video class="mov" controls>
-                            <source src="assets/demo01/P02-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V03B.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V03B</p>
                     </td>
@@ -137,7 +143,7 @@
                 <tr>
                     <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo01/P01.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V04A.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V04A</p>
                     </td>
@@ -148,9 +154,89 @@
                     <td class="icon"><h2>→</h2></td>
                     <td class="output">
                         <video class="mov" controls>
-                            <source src="assets/demo01/P01-s.mp4" type="video/mp4">
+                            <source src="assets/demo01/W1V04B.mp4" type="video/mp4">
                         </video>
                         <p class="video-note">W1V04B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V05A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V05A</p>
+                    </td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript">In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V05B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V05B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V06A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V06A</p>
+                    </td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript">In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V06B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V06B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V07A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V07A</p>
+                    </td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript">In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V07B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V07B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V08A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V08A</p>
+                    </td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript">In the sunny forest, golden leaves fall from the sky and spread all over the ground.</div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V08B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V08B</p>
                     </td>
                 </tr>
 
