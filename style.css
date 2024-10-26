@@ -1,6 +1,6 @@
 :root {
-    --Padding_as_Gap-default: 50px;
-    --PaddingLeftRight-default: 10%;
+    --Padding_as_Gap-default: 30px;
+    --PaddingLeftRight-default: 10px;
     --FontSize-text: 18px;
     --FontSize-title: 17px;
     --Color-title:#34147b;
@@ -24,14 +24,18 @@ p{
 h2{
     margin-top: 0;
     color: var(--Color-title);
+    font-size: 25px;
 }
 h3{
-    margin-top: 50px;
+    margin: 20px auto;
     color: var(--Color-title);
     padding: 0;
+    font-size: 23px;
 }
 h4{
+    margin: 10px auto;
     color: var(--Color-title);
+    font-size: 20px;
 }
 
 /* video{
@@ -84,9 +88,10 @@ td.output{
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
 }
-/* td.icon{
-    background-color: #f8f8ff;
-} */
+td.icon{
+    /* background-color: #f8f8ff; */
+    border: none;
+}
 table, th, td {
     border-top: 1px solid #e3e3e3;
     padding: 0;
@@ -168,6 +173,12 @@ table.survey td {
     color: white;
 }
 
+
+li.contentAppendix{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
 .sec-ctn {
     display: block;
     padding: var(--Padding_as_Gap-default) 0;
@@ -178,7 +189,8 @@ table.survey td {
 }
 
 .abstract{
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 20px;
     color: #999999;
 }
 

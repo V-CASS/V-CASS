@@ -33,12 +33,14 @@
             <h3 style="margin-bottom: 0; color: white;">Contents</h3>
             <nav>
                 <ul style="margin: 0;">
-                    <li><a href="#abstract">0. Abstract</a></li>
-                    <li><a href="#comparsion">1. Vision-context-aware Expressive Synthesized Speech Demo</a></li>
-                    <li><a href="#PE">2. Appendix of Psychological Experiments</a></li>
-                    <li><a href="#method">3. Appendix of V-CASS Method</a></li>
-                    <li><a href="#US">4. Appendix of User Studies</a></li>
-                    <li><a href="#BLV">5. Appendix of Case Studies on BLVs</a></li>
+                    <li><a href="#abstract">Abstract</a></li>
+                    <li><a href="#comparsion">Vision-context-aware Expressive Synthesized Speech Demo</a></li>
+                    <li><a href="#overview">Article Overview</a></li>
+                    <li><a href="#appendix">Appendix</a></li>
+                    <li class="contentAppendix"><a href="#PE"> 1. Appendix of Psychological Experiments</a></li>
+                    <li class="contentAppendix"><a href="#Method"> 2. Appendix of V-CASS Method</a></li>
+                    <li class="contentAppendix"><a href="#US"> 3. Appendix of User Studies</a></li>
+                    <li class="contentAppendix"><a href="#BLV"> 4. Appendix of Case Studies on BLVs</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,22 +52,22 @@
 
     <section class="sec-ctn" id="abstract">
         <div class="abstract">
-            <p><strong>0. Abstract</strong></p>
+            <p><strong>Abstract</strong></p>
             Automatic video commentary systems are widely used on multimedia social media platforms to extract factual information about video content. However, current systems may overlook essential para-linguistic cues, including emotion and attitude, which are critical for fully conveying the meaning of visual content. The absence of these cues can limit user understanding or, in some cases, distort the video’s original intent. Expressive speech effectively conveys these cues and enhances the user’s comprehension of videos. Building on these insights, this paper explores the usage of vision context-aware expressive speech in enhancing users’ understanding of videos in video commentary systems1 . Firstly, our psychological experiments indicate that semantic-only speech can lead to ambiguity, and misaligned emotions between speech and visuals may distort content interpretation. To address this, we propose a method called vision-context-aware speech synthesis (V-CASS). It analyzes para-linguistic cues from visuals using a vision-language model and leverages a knowledge-infused language model to guide the expressive speech model in generating context-aligned speech. User studies show that V-CASS enhances emotional and attitudinal resonance, as well as user audio-visual understanding and engagement, with 74.68% of participants preferring the system. Finally, we explore the potential of our method in helping blind and low vision users navigate web videos, improving universal accessibility without visual input.
         </div>
     </section>
 
     <section class="sec-ctn" id="comparsion">
-        <h4>1. Vision-context-aware Expressive Synthesized Speech Demo</h4>
+        <h3>Vision-context-aware Expressive Synthesized Speech Demo</h3>
         <!-- <div>Here compares the videos...</div> -->
 
         <table>
             <thead>
                 <tr>
                     <td class="given"><h4 style="color: #736698;">Given Video</h4></td>
-                    <td> </td>
+                    <td class="icon"> </td>
                     <td class="given"><h4 style="color: #736698;">Given Transcript</h4></td>
-                    <td> </td>
+                    <td class="icon"> </td>
                     <td class="output"><h4 style="color: #6e0e2c;">Video with Vision-context-aware Expressive Synthesized Speech</h4></td>
                     <!-- <td><h4>Given Video and Transcript</h4></td>
                     <td><h4>Vision-context-aware Expressive Synthesized Speech</h4></td> -->
@@ -242,26 +244,130 @@
                     </td>
                 </tr>
 
-                
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V09A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V09A</p>
+                    </td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript"><span>阳光灿烂，微风和煦，穿着白裙子的女人在花丛中走过，双手轻轻抚摸着身旁的花朵。</span>
+                            <span class="translation">(trans: The sun is shining, the breeze is gentle, and a woman in a white dress walks through the flowers, gently stroking the flowers beside her.)</span></div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V09B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V09B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V10A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V10A</p>
+                    </td>
+                    <td class="icon"><h2>+</h2></td>
+                    <td class="given">
+                        <div class="tdTranscript"><span>他独自撑着伞，孤寂地行走在空旷的土地上，画面一片灰暗，毫无活力。</span>
+                            <span class="translation">(trans: 
+                                He walked alone on the empty land with an umbrella. The picture was dark and lifeless.)</span></div>
+                    </td>
+                    <td class="icon"><h2>→</h2></td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo01/W1V10B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1V10B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="given"><h4 style="color: #736698;">Video with TTS Audio</h4></td>
+                    <td class="icon"> </td>
+                    <td class="given"><h4 style="color: #736698;">Video Link</h4></td>
+                    <td class="icon"> </td>
+                    <td class="output"><h4 style="color: #6e0e2c;">Video with Vision-context-aware Expressive Synthesized Speech</h4></td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV01A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV01A</p>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="given">
+                        <div  class="tdTranscript">
+                            <span>https://tubitv.com/movies/698742/bed-rest</span>
+                        </div>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV01B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV01B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV01A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV01A</p>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="given">
+                        <div  class="tdTranscript">
+                            <span>https://tubitv.com/movies/698742/bed-rest</span>
+                        </div>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV01B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV01B</p>
+                    </td>
+                </tr>
 
                 
             </tbody>
         </table>
 
-       
-    
     </section>
 
+    <section class="sec-ctn" id="overview">
+        <h3>Overview</h3>
+    </section>
 
-
+    <section class="sec-ctn" id="appendix" style="border:none; padding-bottom:0 ;">
+        <h3>Appendix</h3>
+    </section>
 
     
 
-    <section class="sec-ctn" id="PE">
-        <h4>2. Appendix of Psychological Experiments</h4>
+    <section class="sec-ctn" id="PE" style="padding-top: 0;">
+        <h4>1. Appendix of Psychological Experiments</h4>
         <!-- <div>here shows PE metarials</div> -->
         <div class="dataset">
-            <h4>2.1 Survey Dataset</h4>
+            <h4>1.1 Survey Dataset</h4>
             <p>Here shows videos used in the psychological expriments.</p>
             <div class="videoList">
                 <div class="video-container">
@@ -296,38 +402,11 @@
                 </div>
             </div>
             
-
-            <!-- <script>
-                // 直接在数组中包含完整的相对路径
-                const videoFiles_pre = [
-                'assets/pretestVideo/Consistent_negative_video/V13-C-N.mp4',
-                'assets/pretestVideo/Consistent_positive_video/V45-C-P.mp4',
-                'assets/pretestVideo/Inconsistent_negative_video/V9-IC-N.mp4',
-                'assets/pretestVideo/Inconsistent_positive_video/V26-IC-P.mp4',
-                'assets/pretestVideo/Neutral_video/V25-0.mp4',
-                    // 添加更多的视频文件路径
-                ];
-        
-                const videoContainer_pre = document.getElementById('video-container');
-        
-                videoFiles_pre.forEach(file => {
-                    const videoElement_pre = document.createElement('video');
-                    videoElement_pre.className = 'mov';
-                    videoElement_pre.controls = true;
-        
-                    const sourceElement_pre = document.createElement('source');
-                    sourceElement_pre.src = file;
-                    sourceElement_pre.type = 'video/mp4';
-        
-                    videoElement_pre.appendChild(sourceElement_pre);
-                    videoContainer_pre.appendChild(videoElement_pre);
-                });
-            </script> -->
             <div>For more videos, click <a href="dataset.html">here</a></div>
         </div>
 
         <div>
-            <h4>2.2 Survey Interface</h4>
+            <h4>1.2 Survey Interface</h4>
             <div>
                 <table class="survey">
                     <th>
@@ -350,15 +429,15 @@
         </div>
 
         <div>
-            <h4>2.3 Expert Interview Methodology</h4>
+            <h4>1.3 Expert Interview Methodology</h4>
             <p>The interviews followed a <strong>semi-structured</strong> format. Core questions addressed the relationship between visual cues and emotional expression, but the format allowed flexibility for deeper exploration. This method helped uncover implicit knowledge regarding how voice actors adapt emotional tones based on visual content.</p>
-            <h4>2.3.1 Core Questions</h4>
+            <h4>1.3.1 Core Questions</h4>
             <ul>
                 <li>When doing voiceovers for videos, do you consciously pay attention to the emotional expression in your voice? And how do you determine the appropriate emotional tone to use?</li>
                 <li>What visual elements influence your choice of emotional expression when doing voiceovers? Are there any general rules or patterns that can guide a voice actor in selecting the appropriate emotional expression based on different visual cues?</li>
             </ul>
         
-            <h4>2.3.2 Interview Transcript</h4>
+            <h4>1.3.2 Interview Transcript</h4>
             <div>
                 <p class="interviewer"><strong>Interviewer</strong>: When doing voiceovers for videos, do you consciously pay attention to the emotional expression in your voice?</p>
                 <p class="expert"><strong>Expert</strong>: Of course. Unless it’s a more serious or objective scenario where we’re required to use a neutral, emotionless voice, most of the time, we’re expected to convey appropriate emotions, especially in contexts like films and animations.</p>
@@ -418,10 +497,10 @@
 
 
 
-    <section class="sec-ctn" id="method">
-        <h4>3. Appendix of V-CASS Method</h4>
+    <section class="sec-ctn" id="Method">
+        <h4>2. Appendix of V-CASS Method</h4>
         <div>
-            <h4>3.1 Prompt for VLM</h4>
+            <h4>2.1 Prompt for VLM</h4>
             <!-- <div>
                 <p>In order to extract detailed, objective information from each keyframe without introducing any emotional bias, we designed a specialized prompt for the Vision-Language Model (VLM). This prompt is tailored to capture the visual content and style of the image in a highly neutral and descriptive manner.</p>
                 <p>The VLM is instructed to focus solely on the factual details of the image, ensuring that the description remains purely informational. By avoiding any emotional language or interpretive keywords, the prompt ensures that the output provides an accurate visual summary that can later be processed for emotional inference in subsequent stages.</p>
@@ -442,7 +521,7 @@
         </div>
 
         <div>
-            <h4>3.2 Infused Knowledge for LLM through CoT Strategy</h4>
+            <h4>2.2 Infused Knowledge for LLM through CoT Strategy</h4>
             <!-- <div>We infuse the expert knowledge to LLM through CoT strategy...</div> -->
             <pre>
                 <!-- <p class="preTitle">3.2 Infused Knowledge for LLM through CoT Strategy</p> -->
@@ -477,12 +556,12 @@
     
 
     <section class="sec-ctn" id="US">
-        <h4>4. Appendix of User Studies</h4>
+        <h4>3. Appendix of User Studies</h4>
         <div class="usVideo">
-            <h4>4.1 User Studies Videos</h4>
+            <h4>3.1 User Studies Videos</h4>
             <p>Here shows videos used in the user studies.</p>
             <div id="video-container">
-                <h4>4.1.1 Video with expressive speech</h4>
+                <h4>3.1.1 Video with expressive speech</h4>
                 <div class="videoList">
                     <div class="video-container">
                         <video class="mov" controls>
@@ -504,7 +583,7 @@
                     </div>    
                 </div>
 
-                <h4>4.1.2 Video with neutral speech</h4>
+                <h4>3.1.2 Video with neutral speech</h4>
                 <div class="videoList">
                     <div class="video-container">
                         <video class="mov" controls>
@@ -533,8 +612,8 @@
         
 
         <div>
-            <h4>4.2 User Survey Interface</h4>
-            <h4>4.2.1 User Study 01</h4>
+            <h4>3.2 User Survey Interface</h4>
+            <h4>3.2.1 User Study 01</h4>
             
             <table class="survey">
                 <th>
@@ -549,7 +628,7 @@
                 </th>
             </table>
 
-            <h4>4.2.2 User Study 02</h4>
+            <h4>3.2.2 User Study 02</h4>
 
             <table class="survey">
                 <th>
@@ -572,18 +651,18 @@
 
 
     <section class="sec-ctn" id="BLV">
-        <h4>5. Appendix of Case Studies on BLVs</h4>
+        <h4>4. Appendix of Case Studies on BLVs</h4>
         <!-- <div>We built objective survey and interview with BLV participants...</div> -->
 
         <div>
-            <h4>5.1 Observation Purpose</h4>
+            <h4>4.1 Observation Purpose</h4>
             <p>
                 This observation aims to explore how emotion-based speech, driven by visual content, can improve the video-watching experience for BLV (Blind and Visually Impaired) users. While many BLV users have grown accustomed to the neutral tone of AI voices, this study introduces emotional narration to create a more immersive and engaging experience, helping them better perceive emotions and imagine visual scenes.
             </p>
         </div>
 
         <div>
-            <h4>5.2 Observation Process and Methodology</h4>
+            <h4>4.2 Observation Process and Methodology</h4>
             <p>
                 The analysis relies on subjective feedback from BLV users. Through interviews, we collected personal opinions on how different types of narration influenced their emotional engagement and overall experience. Despite being familiar with standard AI narration, participants were surprised by the emotional depth that emotion-driven speech brought to their experience.
             </p>
@@ -596,7 +675,7 @@
         </div>
 
         <div>
-            <h4>5.3 Key Findings</h4>
+            <h4>4.3 Key Findings</h4>
             <p>
                 The interviews revealed some key insights:
             </p>
@@ -609,7 +688,7 @@
 
     
         <div>
-            <h4>5.4 Interview Case Studies</h4>
+            <h4>4.4 Interview Case Studies</h4>
             <p>
                 The following examples illustrate how emotion-based speech influenced user experience, drawn from our interviews with participants:
             </p>
