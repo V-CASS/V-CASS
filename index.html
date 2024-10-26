@@ -287,7 +287,7 @@
                     </td>
                 </tr>
 
-                <tr>
+                <!-- <tr>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -349,12 +349,31 @@
 
                 
             </tbody>
-        </table>
+        </table> -->
 
     </section>
 
     <section class="sec-ctn" id="overview">
-        <h3>Overview</h3>
+        <h3>Method Overview</h3>
+        <table class="survey">
+            <th>
+                <td class="imgtd" style="width: 50%;">
+                    <img src="assets/img/pipeline.jpg" alt="">
+                </td>
+                <td>
+                    <p>Overview of V-CASS method for synthesizing vision context-aware expressive speech. </p>
+                    <p>To generate context-aware speech, it can be essential to incorporate a combination of models and strategies that ensure the speech aligns with the para-linguistic cues presented in the video. Our method integrates a VLM, an LLM infused with expert knowledge through the CoT strategy, and an expressive speech foundation model. </p>
+                    <p>The method is summarized and illustrated in Figure as follows: </p>
+                    <ul>
+                        <li><strong>Stage I:  </strong>The VLM comprehensively analyzes the visual para-linguistic cues from video keyframes.</li>
+                        <li><strong>Stage II:  </strong>The LLM, infused with expert knowledge through the CoT strategy, aims to translate the visual information into instruction. </li>
+                        <li><strong>Stage III:  </strong>The expressive speech foundation model synthesizes vision-context-aware expressive speech. </li>
+                    </ul>
+                </td>
+            </th>
+        </table>
+        <img source src="assets/img/preview.png" alt="overview" style="margin-top: 20px;">
+        <p>Potential effects on audience of semantic-only speech versus vision-context-aware expressive speech in video commentary tasks. Semantic-only speech lacks emotional and attitudinal information, leading to ambiguity and reduced engagement. In contrast, adding expressive speech aligned with visual para-linguistic cues helps enhance emotional resonance and improve the overall understanding of video content. </p>
     </section>
 
     <section class="sec-ctn" id="appendix" style="border:none; padding-bottom:0 ;">
