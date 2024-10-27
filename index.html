@@ -54,7 +54,10 @@
         <div class="abstract">
             <p><strong>Abstract</strong></p>
             Automatic video commentary systems are widely used on multimedia social media platforms to extract factual information about video content. However, current systems may overlook essential para-linguistic cues, including emotion and attitude, which are critical for fully conveying the meaning of visual content. The absence of these cues can limit user understanding or, in some cases, distort the video’s original intent. Expressive speech effectively conveys these cues and enhances the user’s comprehension of videos. Building on these insights, this paper explores the usage of vision context-aware expressive speech in enhancing users’ understanding of videos in video commentary systems1 . Firstly, our psychological experiments indicate that semantic-only speech can lead to ambiguity, and misaligned emotions between speech and visuals may distort content interpretation. To address this, we propose a method called vision-context-aware speech synthesis (V-CASS). It analyzes para-linguistic cues from visuals using a vision-language model and leverages a knowledge-infused language model to guide the expressive speech model in generating context-aligned speech. User studies show that V-CASS enhances emotional and attitudinal resonance, as well as user audio-visual understanding and engagement, with 74.68% of participants preferring the system. Finally, we explore the potential of our method in helping blind and low vision users navigate web videos, improving universal accessibility without visual input.
+            <img source src="assets/img/preview.png" alt="overview" style="margin-top: 20px;">
+            <p>Figure1.Potential effects on audience of semantic-only speech versus vision-context-aware expressive speech in video commentary tasks. Semantic-only speech lacks emotional and attitudinal information, leading to ambiguity and reduced engagement. In contrast, adding expressive speech aligned with visual para-linguistic cues helps enhance emotional resonance and improve the overall understanding of video content. </p>
         </div>
+
     </section>
 
     <section class="sec-ctn" id="comparsion">
@@ -287,7 +290,7 @@
                     </td>
                 </tr>
 
-                <!-- <tr>
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -296,9 +299,9 @@
                 </tr>
 
                 <tr>
-                    <td class="given"><h4 style="color: #736698;">Video with TTS Audio</h4></td>
+                    <td class="given"><h4 style="color: #736698;">Video with TTS Audio from Web Platforms</h4></td>
                     <td class="icon"> </td>
-                    <td class="given"><h4 style="color: #736698;">Video Link</h4></td>
+                    <td class="given"><h4 style="color: #736698;">Video Resource</h4></td>
                     <td class="icon"> </td>
                     <td class="output"><h4 style="color: #6e0e2c;">Video with Vision-context-aware Expressive Synthesized Speech</h4></td>
                 </tr>
@@ -313,7 +316,8 @@
                     <td class="icon"> </td>
                     <td class="given">
                         <div  class="tdTranscript">
-                            <span>https://tubitv.com/movies/698742/bed-rest</span>
+                            <p>Platform: tubitv</p>
+                            <p>Link: https://tubitv.com/movies/698742/bed-rest</p>
                         </div>
                     </td>
                     <td class="icon"> </td>
@@ -328,29 +332,81 @@
                 <tr>
                     <td class="given">
                         <video class="mov" controls>
-                            <source src="assets/demo02/W1VV01A.mp4" type="video/mp4">
+                            <source src="assets/demo02/W1VV02A.mp4" type="video/mp4">
                         </video>
-                        <p class="video-note">W1VV01A</p>
+                        <p class="video-note">W1VV02A</p>
                     </td>
                     <td class="icon"> </td>
                     <td class="given">
                         <div  class="tdTranscript">
-                            <span>https://tubitv.com/movies/698742/bed-rest</span>
+                            <p>Platform: TikTok</p>
+                            <p>Link: https://www.tiktok.com/@happy.little.cat0/video/7404854561912982827</p>
                         </div>
                     </td>
                     <td class="icon"> </td>
                     <td class="output">
                         <video class="mov" controls>
-                            <source src="assets/demo02/W1VV01B.mp4" type="video/mp4">
+                            <source src="assets/demo02/W1VV02B.mp4" type="video/mp4">
                         </video>
-                        <p class="video-note">W1VV01B</p>
+                        <p class="video-note">W1VV02B</p>
                     </td>
-                </tr> -->
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV03A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV03A</p>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="given">
+                        <div  class="tdTranscript">
+                            <p>Platform: tubitv</p>
+                            <p>Link: https://tubitv.com/movies/698742/bed-rest</p>
+                        </div>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV03B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV03B</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="given">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV04A.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV04A</p>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="given">
+                        <div  class="tdTranscript">
+                            <p>Platform: tubitv</p>
+                            <p>Link: https://tubitv.com/movies/698742/bed-rest</p>
+                        </div>
+                    </td>
+                    <td class="icon"> </td>
+                    <td class="output">
+                        <video class="mov" controls>
+                            <source src="assets/demo02/W1VV04B.mp4" type="video/mp4">
+                        </video>
+                        <p class="video-note">W1VV04B</p>
+                    </td>
+                </tr>
 
                 
             </tbody>
         </table>
 
+    </section>
+
+    <section class="sec-ctn" id="Psychological-Experiments">
+        <h3>Psychological Experiments</h3>
+        
     </section>
 
     <section class="sec-ctn" id="overview">
@@ -372,8 +428,6 @@
                 </td>
             </th>
         </table>
-        <img source src="assets/img/preview.png" alt="overview" style="margin-top: 20px;">
-        <p>Potential effects on audience of semantic-only speech versus vision-context-aware expressive speech in video commentary tasks. Semantic-only speech lacks emotional and attitudinal information, leading to ambiguity and reduced engagement. In contrast, adding expressive speech aligned with visual para-linguistic cues helps enhance emotional resonance and improve the overall understanding of video content. </p>
     </section>
 
     <section class="sec-ctn" id="appendix" style="border:none; padding-bottom:0 ;">
