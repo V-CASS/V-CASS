@@ -22,29 +22,35 @@ p{
 
 
 h2{
-    margin-top: 0;
+    margin: 25px auto 15px auto;
     color: var(--Color-title);
     font-size: 25px;
 }
 h3{
-    margin: 20px auto;
+    margin: 25px auto 15px auto;
     color: var(--Color-title);
     padding: 0;
     font-size: 23px;
 }
 h4{
-    margin: 10px auto;
+    margin: 25px auto 15px auto;
     color: var(--Color-title);
     font-size: 20px;
 }
 h5{
     font-size: 18px;
+    margin: 10px auto;
 }
 
 /* video{
     width: 320px;
     height: 240px;
 } */
+
+ul {
+    padding-left: 0;
+    list-style-position: inside; /* 将列表项标记设置为内部对齐 */
+}
 
 img{
     width: 100%;
@@ -57,20 +63,31 @@ img{
     margin: 0 auto;
     padding: 0;
 }
-
+.inner-ctn{
+    width: 100%;
+    margin: 0;
+    padding-left: 1%;
+}
 table {
     border-collapse: separate;
     border-spacing:10px 0;
-    margin: 20px auto 0 auto;
+    margin: 20px auto;
     width: 100%;
     align-items: center;
     border-collapse: collapse; /* 确保边框不会重复 */
+    border-top: 1px solid #e3e3e3;
 }
 table h3{
     margin: 0;
 }
 thead{
     text-align: center;
+    /* height: 30px; */
+}
+th, td {
+    border-top: 1px solid #e3e3e3;
+    padding: 0;
+    margin: 0;
 }
 tbody{
     text-align: left;
@@ -95,22 +112,14 @@ td.icon{
     /* background-color: #f8f8ff; */
     border: none;
 }
-table, th, td {
-    border-top: 1px solid #e3e3e3;
-    padding: 0;
-    margin: 0;
+
+#comparsion thead, #comparsion th, #comparsion td {
+    padding: 0 10px; 
 }
-
-
-th, td {
-    padding: 8px; /* 添加单元格内边距 */
-    border-bottom: 1px solid #e3e3e3;
+#comparsion thead td {
+    height: 10px; /* 设置表头单元格的高度 */
+    padding: 0 5px; /* 调整内边距以控制高度 */
 }
-/* th:last-child, td:last-child {
-    border-bottom: none;
-} */
-
-
 
 
 table.survey, .survey th, .survey td {
@@ -220,7 +229,7 @@ li.contentAppendix{
     width: 240px;
     text-align: center;
     margin:0 auto;
-    padding: 0 10px;
+    padding: 0 20px 0 0;
 }
 .video-note{
     font-size: 15px;
