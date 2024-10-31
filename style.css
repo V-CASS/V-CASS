@@ -75,7 +75,7 @@ table {
     width: 100%;
     align-items: center;
     border-collapse: collapse; /* 确保边框不会重复 */
-    border-top: 1px solid #e3e3e3;
+    /* border-top: 1px solid #e3e3e3; */
 }
 table h3{
     margin: 0;
